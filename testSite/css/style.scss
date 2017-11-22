@@ -1,3 +1,6 @@
+@import "vars";
+
+
 body, html {
 font-size: 14px;
 font-family: "Ubuntu",sans-serif;
@@ -9,7 +12,7 @@ font-family: "Ubuntu",sans-serif;
 }
 
 .second {
-  background: #63B0FF;
+  background: $color_blue;
 }
 
 .first {
@@ -34,7 +37,7 @@ ul {
 .rectangle {
   width: 110px;
   height: 50px;
-  background-image: url("img/pig.png");
+  background-image: url("../img/pig.png");
   display: inline-block;
   vertical-align: middle;
 }
@@ -60,10 +63,23 @@ ul {
 .announce {
   text-align:center;
   height: 635px;
-  background-image: url("img/1cut.jpg");
+  background-image: url("../img/1cut.jpg");
   color: white;
+  position: relative;
 
+
+  &:before{
+    content: '';
+    display: block;
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+  }
 }
+
 
 .announce{
   h5{
@@ -85,7 +101,7 @@ ul {
 }
 
 .card1 {
-  background-image: url("img/2.jpg");
+  background-image: url("../img/2.jpg");
 }
 
 
