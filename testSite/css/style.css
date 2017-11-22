@@ -1,0 +1,70 @@
+body, html {
+  font-size: 14px;
+  font-family: "Ubuntu",sans-serif; }
+
+.wrapper {
+  display: inline-block;
+  width: 100%; }
+
+.second {
+  background: #63B0FF; }
+
+.first {
+  width: 100%;
+  height: 90px; }
+
+ul li {
+  display: inline-block;
+  color: #385472;
+  vertical-align: middle;
+  margin-left: 20px;
+  line-height: 90px; }
+
+ul {
+  display: inline-block; }
+
+.rectangle {
+  width: 110px;
+  height: 50px;
+  background-image: url("img/pig.png");
+  display: inline-block;
+  vertical-align: middle; }
+
+.button {
+  float: right;
+  vertical-align: middle;
+  margin-left: 20px;
+  background-color: transparent;
+  border: 2px solid #63B0FF;
+  border-radius: 4px; }
+
+.data {
+  font-size: 10px;
+  color: white; }
+
+.ftext {
+  color: white; }
+
+.announce {
+  text-align: center;
+  height: 635px;
+  background-image: url("img/1cut.jpg");
+  color: white; }
+
+.announce h5 {
+  font-size: 48px; }
+
+.cardbox h5 {
+  display: block;
+  margin: 0 auto;
+  line-height: 1;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  color: #63b0ff;
+  margin-top: 20px; }
+
+.card1 {
+  background-image: url("img/2.jpg"); }
+
+/*# sourceMappingURL=style.css.map */
