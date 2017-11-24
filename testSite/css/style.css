@@ -32,7 +32,6 @@ ul {
 .rectangle {
   width: 110px;
   height: 50px;
-  background-image: url("../img/logoc.png");
   background-repeat: no-repeat;
   background-size: contain;
   display: inline-block;
@@ -44,30 +43,63 @@ ul {
   margin-left: 20px;
   background-color: transparent;
   border: 2px solid #63B0FF;
-  border-radius: 4px;
+  border-radius: 5px;
   position: absolute;
+  width: 180px;
+  height: 40px;
   top: 50%;
-  transform: translateY(-50%); }
+  transform: translateY(-50%);
+  text-transform: uppercase;
+  font-weight: 500; }
 
 .firstbutton {
-  right: 0; }
+  right: 0;
+  background-color: #63B0FF;
+  color: white; }
 
 .secondbutton {
-  right: 150px; }
+  right: 220px;
+  color: #63B0FF; }
+
+.bot__button {
+  float: right;
+  vertical-align: middle;
+  margin-left: 20px;
+  background-color: transparent;
+  border: 2px solid #63B0FF;
+  border-radius: 5px;
+  position: absolute;
+  width: 180px;
+  height: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 50px; }
+
+.fbutton {
+  right: 0;
+  background-color: #63B0FF;
+  color: white; }
+
+.sbutton {
+  right: 220px;
+  color: white; }
 
 .rect {
   width: 220px;
   height: 70px;
   border: 2px solid white;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
   background-color: transparent;
-  border-radius: 5px; }
+  border-radius: 5px;
+  margin: auto; }
   .rect p {
     font-size: 14px;
     font-weight: 800;
     text-transform: uppercase; }
+
+.rownews {
+  display: flex; }
 
 .head {
   position: relative; }
@@ -79,9 +111,61 @@ ul {
 .ftext {
   color: white; }
 
+.pigitself {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  margin: 0 auto; }
+  .pigitself p {
+    font-size: 12px; }
+  .pigitself img {
+    width: 90px;
+    height: 90px; }
+
+.pigrow {
+  display: block;
+  text-decoration: none;
+  color: inherit; }
+  .pigrow:hover {
+    text-decoration: none;
+    color: inherit; }
+
+.bigpig__help {
+  margin-top: 80px; }
+  .bigpig__help button {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    width: 300px;
+    height: 50px;
+    font-size: 16px;
+    text-transform: uppercase; }
+
+.description {
+  margin-top: 80px; }
+
+.desctext {
+  height: 50px; }
+
+.smallpig__help {
+  margin-top: 10px; }
+  .smallpig__help button {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    text-transform: uppercase; }
+
+.bigpig {
+  position: relative; }
+
 .announce {
   text-align: center;
-  height: 635px;
+  height: inherit;
   background-image: url("../img/1cut.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -105,7 +189,8 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  color: white; }
+  color: white;
+  margin-bottom: 15px; }
   .card .white {
     position: relative; }
   .card:before {
@@ -117,6 +202,17 @@ ul {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.6); }
+  .card:hover:before {
+    background: rgba(0, 0, 0, 0.7); }
+
+.card__report {
+  background-color: transparent;
+  color: white;
+  width: 200px;
+  height: 40px;
+  border: 2px solid white;
+  border-radius: 5px;
+  margin: auto; }
 
 .piggie {
   background-image: url("../img/pig.png");
@@ -167,25 +263,45 @@ ul {
 
 .footer {
   background-color: #284666;
-  text-align: center;
   color: white; }
   .footer h5 {
     font-size: 20px; }
 
 .footer__text {
-  width: 60%;
-  margin-left: 20%; }
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 20px;
+  text-align: center; }
+  .footer__text h5 {
+    font-size: 24px; }
 
 .last {
   margin-top: 50px;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  text-align: center; }
 
 .box {
   border: 2px dashed;
+  border-radius: 3px;
+  border-color: #7E90A3;
   width: 200px;
   height: 200px;
   margin: 0 auto 30px;
   position: relative; }
+
+.squareblock button {
+  width: 200px;
+  background-color: #94B670;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  height: 40px;
+  text-transform: uppercase;
+  font-weight: 500; }
+.squareblock:hover .box {
+  border-color: white; }
+.squareblock:hover .circle {
+  background-color: #91B66B; }
 
 .circle {
   width: 90px;
@@ -218,7 +334,8 @@ circle:hover {
 .footer__rightblock {
   float: right;
   width: 500px;
-  display: inline-block; }
+  display: inline-block;
+  position: relative; }
 
 .footer__leftblock {
   width: 600px; }
@@ -228,15 +345,14 @@ circle:hover {
 .leftlogo {
   width: 110px;
   height: 50px;
-  background-image: url("../img/logoc.png");
-  background-repeat: no-repeat;
-  background-size: contain;
   display: inline-block;
   vertical-align: middle;
-  left: 5%;
   top: 0; }
 
 .lefttext {
-  display: inline-block; }
+  display: inline-block;
+  vertical-align: middle; }
+  .lefttext p {
+    margin: 0; }
 
 /*# sourceMappingURL=style.css.map */
