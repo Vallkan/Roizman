@@ -1,6 +1,5 @@
 @import "vars";
 
-
 body, html {
 font-size: 14px;
 font-family: "Ubuntu",sans-serif;
@@ -15,9 +14,14 @@ font-family: "Ubuntu",sans-serif;
   background: $color_blue;
 }
 
+.fademenu {
+  display: none;
+  cursor: pointer;
+}
+
 .first {
   width:100%;
-  height: 90px;
+  height: auto;
   }
 
 .top__menu {
@@ -25,6 +29,7 @@ font-family: "Ubuntu",sans-serif;
   li {
     display: inline-block;
     color: #385472;
+    cursor: pointer;
     vertical-align: middle;
     margin-left: 20px;
     line-height: 90px;
@@ -51,10 +56,16 @@ ul {
   vertical-align: middle;
 }
 
+.hidden_header {
+  display: none;
+}
+
+
 .top__button {
   float: right;
   vertical-align: middle;
   margin-left: 20px;
+  cursor: pointer;
   background-color: transparent;
   border: 2px solid $color_blue;
   border-radius: 5px;
@@ -80,6 +91,7 @@ ul {
 
 .bot__button {
   float: right;
+  cursor: pointer;
   vertical-align: middle;
   margin-left: 20px;
   background-color: transparent;
@@ -113,13 +125,15 @@ ul {
   border: 2px solid $white;
   background-color: transparent;
   border-radius: 5px;
-  margin: auto;
+  position: absolute;
+  top: 50%;
   p {
     font-size: 14px;
     font-weight: 800;
     text-transform: uppercase;
   }
 }
+
 
 .rownews {
   display: flex;
@@ -134,10 +148,36 @@ ul {
 .data {
   font-size: 10px;
   color: white;
+  margin-bottom: 5px;
+  margin-top: 20px;
 }
 
 .ftext {
   color:white;
+}
+
+.mainpig {
+  &:before {
+    display:block;
+    position: absolute;
+    top: 100%;
+    width: 240px;
+    height: 1px;
+    border: 1px solid white;
+    content: '';
+    left: -270px;
+  }
+
+  &:after {
+    display:block;
+    position: absolute;
+    top: 100%;
+    width: 240px;
+    height: 1px;
+    border: 1px solid white;
+    content: '';
+    right: -270px;
+  }
 }
 
 .pigitself {
@@ -145,6 +185,8 @@ ul {
   height: 80px;
   text-align: center;
   margin: 0 auto;
+  position: relative;
+
 
   p {
     font-size: 12px;
@@ -180,15 +222,28 @@ ul {
   }
 }
 
-
+.oneblock {
+  display: inline;
+  width: 100%;
+}
 
 .description {
   margin-top: 80px;
 }
 
+.otstup {
+  margin-bottom: 35px;
+}
+
 .desctext {
   height: 50px;
 }
+
+.desctext2 {
+  height: 50px;
+  font-weight: 500;
+}
+
 
 .smallpig__help {
   margin-top: 10px;
@@ -206,16 +261,33 @@ ul {
 
 .bigpig {
   position: relative;
+  cursor: pointer;
+}
+
+.help__button__icon {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  path {
+    fill: white;
+  }
 }
 
 .announce {
   text-align:center;
   height: inherit;
-  background-image: url("../img/1cut.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+
   position: relative;
   color: $white;
+
+  .announcement__big__icon {
+    fill: white;
+  }
+
 
 
   .rosinka {
@@ -238,15 +310,39 @@ ul {
   }
 }
 
+.jpgcut1 {
+  background-image: url("../img/1cut.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jpg11 {
+  background-image: url("../img/11.jpg");
+  z-index: 1;
+}
+
+
+.jpg7 {
+  background-image: url("../img/7.jpg");
+}
+
+.jpg8 {
+  background-image: url("../img/8.jpg");
+}
+
+.jpg10 {
+  background-image: url("../img/10.jpg");
+}
 
 .card {
   text-align: center;
   background-repeat: no-repeat;
   background-size: cover;
+  cursor: pointer;
   position: relative;
   color: $white;
   margin-bottom: 15px;
-
+  height: 240px;
   .white {
     position: relative;
   }
@@ -286,11 +382,19 @@ ul {
 
 }
 
+#icon__logo {
+  fill: #284666;
+}
+
+#icon__log {
+  fill: white;
+}
 
 .piggie {
-  background-image: url("../img/pig.png");
   width: 60px;
   height: 60px;
+  fill: white;
+  margin-top: 15px;
 }
 
 .announce{
@@ -335,9 +439,20 @@ ul {
 }
 
 .card6 {
-  background-color: $darkblue;
+  background: #ffffff;
   text-align: center;
-  height: 175px;
+  position: relative;
+  &:before {
+    content: '';
+    display: block;
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $darkblue;
+  }
+
 }
 
 .card {
@@ -354,7 +469,7 @@ ul {
   }
 }
 
-.footer {
+.fondhelp {
   background-color: $darkblue;
   color: $white;
   h5 {
@@ -364,8 +479,8 @@ ul {
 
 
 .footer__text {
-  width: 50%;
-  margin-left: 25%;
+  width: 60%;
+  margin-left: 20%;
   margin-top: 20px;
   text-align: center;
   h5 {
@@ -385,15 +500,17 @@ ul {
   border-color: #7E90A3;
   width: 200px;
   height: 200px;
-  margin: 0 auto 30px;
+  margin: 0 auto 15px;
   position: relative;
 }
 
 .squareblock {
+  cursor: pointer;
   button {
     width: 200px;
     background-color: #94B670;
     color: $white;
+    margin-bottom: 25px;
     border: 0;
     border-radius: 5px;
     height: 40px;
@@ -403,17 +520,23 @@ ul {
   &:hover .box {
     border-color: $white;
   }
+
   &:hover .circle {
     background-color: #91B66B;
+    width: 110px;
+    height: 110px;
   }
 }
 
 .circle {
   width: 90px;
   height: 90px;
-  border-radius: 60px;
+  border-radius: 50%;
+  display: flex;
+
   border: 2px solid;
   margin: 0 auto;
+  transition: all 0.2s;
   background-color: $color_blue;
   position: absolute;
   top: 50%;
@@ -421,12 +544,9 @@ ul {
   transform: translate(-50%, -50%);
 }
 
-circle:hover {
-  background-color: #91B66B;
-}
 
-
-.footer__menu {
+.footer {
+  height: 120px;
   ul>li {
     color: $white;
   }
@@ -441,6 +561,13 @@ circle:hover {
 }
 
 .bot__menu {
+  a {
+    color: white;
+    &:hover {
+      color: white;
+    }
+  }
+
   li {
     display: inline-block;
     color: $white;
@@ -460,6 +587,7 @@ circle:hover {
 
 .footer__leftblock {
   width: 600px;
+  padding-top: 40px;
   p {
     font-size: 11px;
   }
@@ -485,3 +613,5 @@ circle:hover {
 
 
 
+@import "media";
+@import "keyframe";
