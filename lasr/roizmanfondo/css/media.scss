@@ -1,0 +1,166 @@
+@media screen and (min-width: 991px) {
+
+  .rect {
+    transform: translateY(-50%);
+  }
+
+}
+
+@media screen and (max-width: 990px) {
+
+  .footer__text {
+    width: 100%;
+    margin-left: 0;
+  }
+  .head {
+    height: 120px;
+  }
+
+  .top__button {
+    top: 70%;
+  }
+
+  .footer__leftblock {
+    padding-top: 0;
+  }
+
+  .second {
+    height: 300px;
+  }
+
+  .help {
+    margin-bottom: 20px;
+  }
+
+  .rect{
+    position: relative;
+    top: 0;
+    width: 220px;
+    height: 40px;
+    line-height: 32px;
+    margin-bottom: 15px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .mainpig {
+    &:before {
+      width: 80px;
+      left: -110px;
+    }
+    &:after {
+      width: 80px;
+      right: -110px;
+    }
+  }
+
+  .topblock {
+    height: auto;
+  }
+
+
+  .bot__button {
+    display: none;
+  }
+
+  .bot__menu {
+    display: none;
+  }
+
+  .footer__leftblock {
+    text-align: center;
+    width: 100%;
+  }
+
+  .head {
+    height: auto;
+  }
+
+  .top__button {
+    position: relative;
+    margin: auto;
+    top: auto;
+    left: auto;
+    transform: translateY(0);
+    right: 0;
+  }
+
+
+  .firstbutton {
+    width: 100%;
+  }
+
+  .secondbutton {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  .hidden_header {
+    display: block;
+    color: white;
+  }
+
+  .oneblock {
+   height: auto;
+    float: left;
+    display: none;
+  }
+
+
+  .top__menu {
+    display: block;
+    margin-top: 40px;
+    li {
+      display: block;
+      height: 45px;
+      line-height: 45px;
+      text-align: center;
+      border-top: 1px solid black;
+    }
+  }
+
+  .displaytoggle {
+    display: block;
+  }
+
+  .hider {
+    height: 60px;
+    overflow: hidden;
+  }
+
+  .fademenu {
+    display: inline-block;
+    float: right;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 20px;
+  }
+
+  .rect{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 32px;
+    margin-bottom: 15px;
+  }
+  .rownews {
+    height: auto;
+  }
+  .second {
+    height: auto;
+  }
+
+  .box {
+    width: 100%;
+  }
+
+  .squareblock {
+    button {
+      width: 100%;
+    }
+  }
+
+}

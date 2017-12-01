@@ -1,0 +1,618 @@
+@import "vars";
+
+body, html {
+font-size: 14px;
+font-family: "Ubuntu",sans-serif;
+}
+
+.wrapper {
+  display: inline-block;
+  width: 100%;
+}
+
+.second {
+  background: $color_blue;
+}
+
+.fademenu {
+  display: none;
+  cursor: pointer;
+}
+
+.topblock {
+  width:100%;
+  height: auto;
+  }
+
+.top__menu {
+  padding-left: 0;
+  li {
+    display: inline-block;
+    color: #385472;
+    cursor: pointer;
+    vertical-align: middle;
+    margin-left: 20px;
+    line-height: 90px;
+    a {
+      color: #385472;
+      font-size: 12px;
+      font-weight: 500;
+
+    }
+  }
+}
+
+
+ul {
+  display: inline-block;
+}
+
+.rectangle {
+  width: 110px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.hidden_header {
+  display: none;
+}
+
+
+.top__button {
+  float: right;
+  vertical-align: middle;
+  margin-left: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid $color_blue;
+  border-radius: 5px;
+  position: absolute;
+  width: 180px;
+  height: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.firstbutton {
+  right: 0;
+  background-color: $color_blue;
+  color: $white;
+}
+
+.secondbutton {
+  right: 220px;
+  color: $color_blue
+}
+
+.bot__button {
+  float: right;
+  cursor: pointer;
+  vertical-align: middle;
+  margin-left: 20px;
+  background-color: transparent;
+  border: 2px solid $color_blue;
+  border-radius: 5px;
+  position: absolute;
+  width: 180px;
+  height: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 50px;
+}
+
+
+.fbutton {
+  right: 0;
+  background-color: $color_blue;
+  color: $white;
+}
+
+.sbutton {
+  right: 220px;
+  color: $white
+}
+
+.rect {
+  width: 220px;
+  height: 70px;
+  border: 2px solid $white;
+  background-color: transparent;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  p {
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+}
+
+
+.rownews {
+  display: flex;
+}
+
+
+
+.head {
+  position: relative;
+}
+
+.data {
+  font-size: 10px;
+  color: white;
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+
+.ftext {
+  color:white;
+}
+
+.mainpig {
+  &:before {
+    display:block;
+    position: absolute;
+    top: 100%;
+    width: 240px;
+    height: 1px;
+    border: 1px solid white;
+    content: '';
+    left: -270px;
+  }
+
+  &:after {
+    display:block;
+    position: absolute;
+    top: 100%;
+    width: 240px;
+    height: 1px;
+    border: 1px solid white;
+    content: '';
+    right: -270px;
+  }
+}
+
+.pigitself {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+
+
+  p {
+    font-size: 12px;
+  }
+
+  img {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+.pigrow {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.bigpig__help {
+  margin-top: 80px;
+  button {
+    background-color: transparent;
+    border: 2px solid $white;
+    border-radius: 5px;
+    color: $white;
+    width: 300px;
+    height: 50px;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+}
+
+.oneblock {
+  display: inline;
+  width: 100%;
+}
+
+.description {
+  margin-top: 80px;
+}
+
+.otstup {
+  margin-bottom: 35px;
+}
+
+.desctext {
+  height: 50px;
+}
+
+.desctext2 {
+  height: 50px;
+  font-weight: 500;
+}
+
+
+.smallpig__help {
+  margin-top: 10px;
+  button {
+    background-color: transparent;
+    border: 2px solid $white;
+    border-radius: 5px;
+    color: $white;
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+}
+
+.bigpig {
+  position: relative;
+  cursor: pointer;
+}
+
+.help__button__icon {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  path {
+    fill: white;
+  }
+}
+
+.announce {
+  text-align:center;
+  height: inherit;
+
+  position: relative;
+  color: $white;
+
+  .announcement__big__icon {
+    fill: white;
+  }
+
+
+
+  .rosinka {
+    //z-index: 1;
+    position: relative;
+    margin-top: 30px;
+  }
+
+  &:before{
+    content: '';
+    display: block;
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $greybackground;
+    //z-index: 0;
+    //opacity: 0.99;
+  }
+}
+
+.jpgcut1 {
+  background-image: url("../img/1cut.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jpg11 {
+  background-image: url("../img/11.jpg");
+  z-index: 1;
+}
+
+
+.jpg7 {
+  background-image: url("../img/7.jpg");
+}
+
+.jpg8 {
+  background-image: url("../img/8.jpg");
+}
+
+.jpg10 {
+  background-image: url("../img/10.jpg");
+}
+
+.card {
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  position: relative;
+  color: $white;
+  margin-bottom: 15px;
+  height: 240px;
+  .white {
+    position: relative;
+  }
+
+  &:before{
+    content: '';
+    display: block;
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $greybackground;
+    //z-index: 0;
+    //opacity: 0.99;
+  }
+  &:hover {
+
+   &:before{
+  background: $moregreybackground;
+    }
+  }
+}
+
+
+.card__report {
+  background-color: transparent;
+  color: $white;
+  width: 200px;
+  height: 40px;
+  border: 2px solid $white;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.allprojects {
+
+}
+
+#icon__logo {
+  fill: #284666;
+}
+
+#icon__log {
+  fill: white;
+}
+
+.piggie {
+  width: 60px;
+  height: 60px;
+  fill: white;
+  margin-top: 15px;
+}
+
+.announce{
+  h5{
+    font-size: 48px;
+  }
+}
+
+.cardbox {
+ h5 {
+   display: block;
+   margin: 0 auto;
+   line-height: 1;
+   font-size: 24px;
+   font-weight: 500;
+   text-align: center;
+   color: $color_blue;
+   margin-top: 20px;
+   margin-bottom: 20px;
+ }
+}
+
+
+.card1 {
+  background-image: url("../img/3.jpg");
+}
+
+.card2 {
+  background-image: url("../img/5.jpg");
+}
+
+.card3 {
+  background-image: url("../img/2.jpg");
+}
+
+.card4 {
+  background-image: url("../img/4.jpg");
+}
+
+.card5 {
+  background-image: url("../img/9.jpg");
+}
+
+.card6 {
+  background: #ffffff;
+  text-align: center;
+  position: relative;
+  &:before {
+    content: '';
+    display: block;
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $darkblue;
+  }
+
+}
+
+.card {
+  p {
+    margin-bottom: 20px;
+    margin-top: 30px;
+    color: $white;
+  }
+}
+
+.card {
+  button {
+    margin-bottom: 30px;
+  }
+}
+
+.fondhelp {
+  background-color: $darkblue;
+  color: $white;
+  h5 {
+    font-size: 20px;
+  }
+}
+
+
+.footer__text {
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 20px;
+  text-align: center;
+  h5 {
+    font-size: 24px;
+  }
+}
+
+.last {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.box {
+  border: 2px dashed;
+  border-radius: 3px;
+  border-color: #7E90A3;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 15px;
+  position: relative;
+}
+
+.squareblock {
+  cursor: pointer;
+  button {
+    width: 200px;
+    background-color: #94B670;
+    color: $white;
+    margin-bottom: 25px;
+    border: 0;
+    border-radius: 5px;
+    height: 40px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  &:hover .box {
+    border-color: $white;
+  }
+
+  &:hover .circle {
+    background-color: #91B66B;
+    width: 110px;
+    height: 110px;
+  }
+}
+
+.circle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: flex;
+
+  border: 2px solid;
+  margin: 0 auto;
+  transition: all 0.2s;
+  background-color: $color_blue;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.footer {
+  height: 120px;
+  background-color: $darkblue;
+  ul>li {
+    color: $white;
+  }
+}
+
+
+.footer__rightblock {
+  ul {
+    float: right;
+    margin-top: 0;
+  }
+}
+
+.bot__menu {
+  a {
+    color: white;
+    &:hover {
+      color: white;
+    }
+  }
+
+  li {
+    display: inline-block;
+    color: $white;
+    vertical-align: middle;
+    margin-left: 20px;
+  }
+}
+
+
+.footer__rightblock {
+  float: right;
+  width: 500px;
+  display: inline-block;
+  position:relative;
+}
+
+
+.footer__leftblock {
+  width: 600px;
+  padding-top: 40px;
+  p {
+    font-size: 11px;
+  }
+}
+
+.leftlogo {
+  width: 110px;
+  height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  top: 0;
+}
+
+
+.lefttext {
+  display: inline-block;
+  vertical-align: middle;
+  p {
+    margin: 0;
+  }
+}
+
+
+
+
+@import "media";
+@import "keyframe";
